@@ -54,6 +54,62 @@ PUT    /api/myofficeacpd/{sid}
 DELETE /api/myofficeacpd/{sid}
 ```
 
+## 測試 JSON
+
+`POST /api/myofficeacpd`
+
+```json
+{
+  "acpdCname": "Tewei Lai",
+  "acpdEname": "Tewei",
+  "acpdSname": "Tewei",
+  "acpdEmail": "tewei@example.com",
+  "acpdStatus": 0,
+  "acpdStop": false,
+  "acpdStopMemo": null,
+  "acpdLoginId": "tewei",
+  "acpdLoginPwd": "Pass1234",
+  "acpdMemo": "Test data",
+  "operatorId": "system"
+}
+```
+
+`PUT /api/myofficeacpd/{sid}`
+
+```json
+{
+  "acpdCname": "Tewei Lai Updated",
+  "acpdEname": "Tewei",
+  "acpdSname": "TW",
+  "acpdEmail": "tewei.updated@example.com",
+  "acpdStatus": 0,
+  "acpdStop": false,
+  "acpdStopMemo": null,
+  "acpdLoginId": "tewei",
+  "acpdLoginPwd": "Pass5678",
+  "acpdMemo": "Updated test data",
+  "operatorId": "system"
+}
+```
+
+`GET /api/myofficeacpd`
+
+```text
+直接查詢全部資料
+```
+
+`GET /api/myofficeacpd/{sid}`
+
+```text
+將 {sid} 替換為實際主鍵值
+```
+
+`DELETE /api/myofficeacpd/{sid}`
+
+```text
+將 {sid} 替換為實際主鍵值
+```
+
 ## 補充說明
 
 - `ACPD_SID` 由 `dbo.NEWSID` 產生
