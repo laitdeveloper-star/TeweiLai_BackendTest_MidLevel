@@ -4,8 +4,7 @@
 
 - `.NET 8 Web API`
 - `MyOffice_ACPD` CRUD API
-- SQL Server 建表 / Stored Procedure 腳本
-- 資料庫備份腳本
+- SQL Server 建表與 Stored Procedure 腳本
 
 ## 專案結構
 
@@ -13,8 +12,6 @@
   Web API 專案
 - `database/00_setup.sql`
   建立資料表與 Stored Procedure
-- `database/01_backup.sql`
-  產生資料庫備份檔 `.bak`
 - `TSQLScript/`
   題目原始提供檔案
 
@@ -29,7 +26,6 @@
 1. 在 SQL Server 建立資料庫 `BackendExamHub`
 2. 執行 `database/00_setup.sql`
 3. 視需要新增測試資料
-4. 如需備份檔，執行 `database/01_backup.sql`
 
 ## API 啟動方式
 
